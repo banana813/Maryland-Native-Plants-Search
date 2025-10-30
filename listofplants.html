@@ -1,0 +1,76 @@
+<!--Placeholder for searchable list of nativeplants with images.-->
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maryland Native Plant List</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="nativearray.js"></script> 
+    </head>
+    <body>
+		<h2 id="pagetitle"><a href="https://ramadanrecycling.com/iccpnative"><img style="width:10%" src="iccpnative.png"/></a><br>Maryland Native Plant List</h2>
+        <ul class="navbar">
+            <li class="navitem"><a href="aticcp.html">About Native Plants at ICCP</a></li>
+            <li class="navitem"><a href="index.html">Back to Maryland Native Plants Search</a></li>
+        </ul>
+        <p style="padding: 20px;">Here's the full list of native plants featured on this app. Click on any plant for a description and care instructions.</p>
+        <div id = "bigdiv"></div>
+        <div id="detailspane" class="details_pane_on_plant_list">
+            <button onclick="clear_details_on_list_page()">Back</button>
+            <p id="plant"></p>
+            <p style="font-size: 12px; font-style: italic; color: gray;" id="scitname"></p>
+            <p id = "description"></p>
+            <div>
+                <img src="resources\plant_images\americanholly.png" id="American Holly" class="plant_image">
+                <img src="resources\plant_images\blackeyedsusan.png" id="Black-eyed Susan" class="plant_image">
+                <img src="resources\plant_images\blueridgeblueberry.png" id="Blue Ridge Blueberry" class="plant_image">
+                <img src="resources\plant_images\bluewoodaster.png" id="Blue Wood Aster" class="plant_image">
+                <img src="resources\plant_images\butterflyweed.png" id="Butterfly weed" class="plant_image">
+                <img src="resources\plant_images\cardinalflower.png" id="Cardinal flower" class="plant_image">
+                <img src="resources\plant_images\chalkbarkmaple.png" id="Chalkbark Maple" class="plant_image">
+                <img src="resources\plant_images\christmasfern.png" id="Christmas Fern" class="plant_image">
+                <img src="resources\plant_images\commonmilkweed.png" id="Common Milkweed" class="plant_image">
+                <img src="resources\plant_images\commonpawpaw.png" id="Common Pawpaw" class="plant_image">
+                <img src="resources\plant_images\creepingphlox.png" id="Creeping Phlox" class="plant_image">
+                <img src="resources\plant_images\easternbluestar.png" id="Eastern Bluestar" class="plant_image">
+                <img src="resources\plant_images\easternredbud.png" id="Eastern Redbud" class="plant_image">
+                <img src="resources\plant_images\falseindigo.png" id="False Indigo" class="plant_image">
+                <img src="resources\plant_images\floweringdogwood.png" id="Flowering Dogwood" class="plant_image">
+                <img src="resources\plant_images\foxglovebeardtongue.png" id="Foxglove Beardtongue" class="plant_image">
+                <img src="resources\plant_images\fringetree.png" id="Fringetree" class="plant_image">
+                <img src="resources\plant_images\goldenrod.png" id="Goldenrod" class="plant_image">
+                <img src="resources\plant_images\goldenalexander.png" id="Golden Alexander" class="plant_image">
+                <img src="resources\plant_images\goldenragwort.png" id="Golden ragwort" class="plant_image">
+                <img src="resources\plant_images\heartleaffoamflower.png" id="Heartleaf Foamflower" class="plant_image">
+                <img src="resources\plant_images\hollowjoepyeweed.png" id="Hollow joe-pye weed" class="plant_image">
+                <img src="resources\plant_images\dwarfcrestediris.png" id="Dwarf Crested Iris" class="plant_image">
+                <img src="resources\plant_images\mapleleafviburnum.png" id="Mapleleaf Virburnum" class="plant_image">
+                <img src="resources\plant_images\redcolumbine.png" id="Red Columbine" class="plant_image">
+                <img src="resources\plant_images\stjohnswort.png" id="St. John's Wort" class="plant_image">
+                <img src="resources\plant_images\swampmilkweed.png" id="Swamp milkweed" class="plant_image"><img src="resources\plant_images\hollowjoe-pyeweed.png" id="Hollow joe-pye weed" class="plant_image">
+                <img src="resources\plant_images\whiteturtlehead.png" id="White Turtlehead" class="plant_image">
+                <img src="resources\plant_images\beebalmwildbergamot.png" id="Bee balm (Wild Bergamot)" class="plant_image">
+                <br>
+                <button id="careinstr" onclick="makecareinst(planters)">Planting and Care Instructions</button>
+            </div>
+            <div id="careinst" class="forstyling">
+                <button onclick="careinst.style.display = 'none'">Back</button>
+                <p id="anattract"></p>
+                <p id="anrepel"></p>
+                <p id="size"></p>
+                <p id="sunneeds"></p>
+                <p id="soilneeds"></p>
+                <p id="watering"></p>
+            </div>
+		</div>
+		<span style="display:none" id="message">Messages:</span>
+		<br>
+		<p style="text-align:center"><a href="https://iccpmd.org/green/"><img src="resources/iccp_images/greenteam.png" width="75pt"/></a></p>
+		<small>&copy; 2025 Sufyana and Aydina Johnson. All rights reserved.</small>
+        <script src="script.js"></script>
+    </body>
+</html>

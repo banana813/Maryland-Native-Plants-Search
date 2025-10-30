@@ -1,0 +1,177 @@
+.plant_image{
+    display: none;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5fff5; 
+    color: #004d00;
+}
+
+#careinst{
+    display: none;
+}
+
+a {
+    color: #227722;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navitem {
+    background-color: #ffffff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #00aa00;
+}
+
+.textlist li {
+		margin-bottom: 8pt;
+}
+
+.navitem li {
+		margin-bottom: 08pt;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 8px;
+    margin-top: 4px;
+    border-radius: 6px;
+    border: 1px solid #00aa00;
+    box-sizing: border-box;
+}
+#plantlistpane, #detailspane, #careinst {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border: 2px solid #00aa00;
+}
+.details_pane_on_plant_list {
+	position: fixed; /* Positions the div relative to the browser window */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000; /* A high value to place it over all other content */
+}
+
+#plantlistpane p {
+    padding: 8px;
+    margin: 4px 0;
+    cursor: pointer;
+    border: 1px solid #00aa00;
+    border-radius: 6px;
+    background-color: #f0fff0;
+    transition: background-color 0.2s;
+}
+
+#plantlistpane p:hover {
+    background-color: #e0ffe0;
+}
+
+#detailspane img.plant_image {
+    max-width: 100%;
+    height: auto;
+    display: none; /* hidden by default, shown by JS */
+    margin-top: 10px;
+    border: 2px solid #00aa00;
+    border-radius: 8px;
+}
+body > div {
+    padding: 10px;
+}
+
+/* Images and text scale on small screens */
+@media screen and (max-width: 600px) {
+    ul {
+        flex-direction: column;
+    }
+
+    #plantlistpane p {
+        font-size: 18px;
+    }
+
+    #detailspane p {
+        font-size: 16px;
+    }
+}
+#bigdiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+#overdiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+.listdiv img {
+    border-radius: 6px;
+    border: 1px solid #00aa00;
+    max-width: 100%;
+    height: auto;
+}
+.iccpdiv img {
+    border-radius: 6px;
+    border: 1px solid #00aa00;
+    max-width: 100%;
+    height: auto;
+}
+#iccpimg {
+    border: 1px solid #00aa00;
+    border-radius: 6px;
+    display: inline;
+    margin: 0px auto;
+}
+.listdiv {
+    background-color: #ffffff;
+    border: 2px solid #00aa00;
+    border-radius: 8px;
+    text-align: center;
+    padding: 12px;
+}
+
+.iccpdiv {
+    background-color: #ffffff;
+    border: 2px solid #00aa00;
+    border-radius: 8px;
+    text-align: center;
+    padding: 12px;
+}
+
+.listdiv p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#pagetitle
+{
+	text-align: center;
+}
